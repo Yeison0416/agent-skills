@@ -29,4 +29,6 @@ If you edited upstream-owned files under `skills/`, resolve merge conflicts care
 
 ## Custom layer
 
-- **`yeison/AI-Assisted Software Development System.md`** — my workflow and engineering philosophy; map phases to Addy skills over time.
+- **`yeison/ai-development-philosophy.md`** — how I think about AI-assisted development
+- **`yeison/ai-development-workflow.md`** — my workflow phases and skill mapping
+- **`yeison/AI-Assisted Software Development System.md`** — legacy combined doc (replace with the two files above)
