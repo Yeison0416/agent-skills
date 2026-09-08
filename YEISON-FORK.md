@@ -31,3 +31,4 @@ If you edited upstream-owned files under `skills/`, resolve merge conflicts care
 
 - **`yeison/ai-development-philosophy.md`** — how I think about AI-assisted development
 - **`yeison/ai-development-workflow.md`** — my workflow phases and skill mapping
+- **`yeison/notes/`** — personal learning and interview notes (see [`yeison/notes/README.md`](yeison/notes/README.md))
