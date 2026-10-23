@@ -27,7 +27,7 @@ yeison/install.sh --target cursor      # ~/.cursor/skills
 yeison/install.sh --target claude --dry-run
 ```
 
-It symlinks only the skills listed in `yeison/skills-core.txt`, never overwrites a real folder or a foreign link, and is safe to rerun (`--prune` removes our links that left the manifest). Add a skill to a single project by pointing `--target` at that project's skills folder with its own `--manifest`. The reasoning and token budget are in [`yeison/ai-config-plan.md`](yeison/ai-config-plan.md).
+It symlinks only the skills listed in `yeison/skills-core.txt` (plus a `references` link beside the skills folder, because skills cite `../../references/*.md`), never overwrites a real folder or a foreign link, and is safe to rerun (`--prune` removes our links that left the manifest). Add a skill to a single project by pointing `--target` at that project's skills folder with its own `--manifest`. The reasoning and token budget are in [`yeison/ai-config-plan.md`](yeison/ai-config-plan.md).
 
 ## What belongs where
 

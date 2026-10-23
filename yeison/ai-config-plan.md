@@ -58,9 +58,10 @@ Instead, `yeison/install.sh` symlinks the skills named in a manifest (`yeison/sk
 | `git-workflow-and-versioning` | 150 |
 | `security-and-hardening` | 200 |
 | `context-engineering` | 70 |
-| **Total** | **~1.2k** |
+| `interview-me` | 170 |
+| **Total** | **~1.4k** |
 
-The other 15 skills stay available per project (for example `frontend-ui-engineering` and `browser-testing-with-devtools` for a frontend repo), costing about 1.8k tokens only where they are useful. The nine slash commands are not installed; plain requests trigger the skills. `constraint-driven-development` is the most expensive description (~300 tokens).
+The other 14 skills stay available per project (for example `frontend-ui-engineering` for a frontend repo), costing about 1.6k tokens only where they are useful. Add one only when the project can use it: `browser-testing-with-devtools` needs a Chrome DevTools MCP server, and `ci-cd-and-automation` needs a pipeline to work on. The nine slash commands are not installed; plain requests trigger the skills. `constraint-driven-development` is the most expensive description (~300 tokens).
 
 ## Instruction triage rules
 

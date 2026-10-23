@@ -10,6 +10,9 @@
 #   --dry-run         print what would happen, change nothing
 #   --prune           also remove links into this fork that are not in the manifest
 #
+# Skills refer to shared files as ../../references/<file>.md, so a `references` link
+# is also created next to the skills directory (e.g. ~/.claude/references).
+#
 # Safe to rerun. It only creates or removes symlinks that point into this fork's
 # skills/ directory, and it never overwrites a real file, directory or foreign link.
 
@@ -82,6 +85,24 @@ for name in "${names[@]}"; do
     if [ "$DRY_RUN" -eq 1 ]; then echo "  would link  $name"; else echo "  linked   $name"; fi
   fi
 done
+
+# Shared references, next to the skills directory.
+REFS_SRC="$FORK_DIR/references"
+REFS_DEST="$(dirname "$TARGET")/references"
+if [ -d "$REFS_SRC" ]; then
+  if [ -L "$REFS_DEST" ]; then
+    if [ "$(readlink "$REFS_DEST")" = "$REFS_SRC" ]; then
+      echo "  ok       references"
+    else
+      echo "  REFUSED  references (existing link points to $(readlink "$REFS_DEST"))"; problems=$((problems + 1))
+    fi
+  elif [ -e "$REFS_DEST" ]; then
+    echo "  REFUSED  references (a real file or directory already exists at $REFS_DEST)"; problems=$((problems + 1))
+  else
+    run ln -s "$REFS_SRC" "$REFS_DEST"
+    if [ "$DRY_RUN" -eq 1 ]; then echo "  would link  references"; else echo "  linked   references"; fi
+  fi
+fi
 
 if [ "$PRUNE" -eq 1 ] && [ -d "$TARGET" ]; then
   for link in "$TARGET"/*; do
