@@ -1,0 +1,13 @@
+# Skills installed at user level (one name per line; # starts a comment).
+# Each one costs its description in every session, so a skill earns a place here
+# only if it is used across most projects. Approximate description cost in tokens.
+using-agent-skills            # 90
+spec-driven-development       # 150
+planning-and-task-breakdown   # 90
+incremental-implementation    # 120
+test-driven-development       # 100
+debugging-and-error-recovery  # 120
+code-review-and-quality       # 90
+git-workflow-and-versioning   # 150
+security-and-hardening        # 200
+context-engineering           # 70
