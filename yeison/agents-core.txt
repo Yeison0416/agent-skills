@@ -1,0 +1,4 @@
+# Subagents linked at user level for Claude Code (one name per line; # starts a comment).
+# Each one costs its description in every session, so only the ones useful across projects.
+code-reviewer     # ~65 tokens: independent review read
+test-engineer     # ~66 tokens: test strategy and coverage
