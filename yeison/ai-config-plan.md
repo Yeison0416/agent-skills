@@ -77,7 +77,7 @@ Claude Code concatenates every instruction file it finds from the working direct
 
 ## Measured result
 
-After removing the previous framework, managed bundles and a design plugin, the fixed overhead of a fresh session was about 18k tokens (system prompt 2.4k, tools 5.1k, memory files 2.7k, skills 7.3k, agents 0.3k). Of the skills, about 2.9k are built-in and 1.8k come from account-level document skills; the rest are the development skills above. Re-measure after each phase.
+After removing the previous framework, managed bundles and a design plugin, replacing per-project copies with symlinks to this fork, and trimming the project instruction file, the fixed overhead of a fresh session (`/context`) was **16.7k tokens**: system prompt 2.4k, system tools 6.8k, memory files 2.0k, skills 5.4k (34 skills), agents 0.13k. Of the skills, 12 are ours (about 1.5k), 14 are built into the harness (about 2.1k) and 8 are account-level document skills (about 1.75k). Connectors that load on demand cost 0 tokens. The same measurement midway through was 17.8k; the starting point, estimated from file sizes and never measured, was about 28k. Re-measure after each phase.
 
 ## Open questions
 
