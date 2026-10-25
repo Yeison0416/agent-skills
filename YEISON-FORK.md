@@ -43,5 +43,6 @@ It symlinks only the skills listed in `yeison/skills-core.txt` (plus a `referenc
 
 - **`yeison/ai-development-philosophy.md`** — how I think about AI-assisted development
 - **`yeison/ai-development-workflow.md`** — my workflow phases and skill mapping
+- **`yeison/SETUP.md`** — runbook: bootstrap on a new machine, maintenance, pitfalls, rollback
 - **`yeison/ai-config-plan.md`** — reusable plan for a development-focused, token-efficient harness configuration
 - **`yeison/notes/`** — personal learning and interview notes (see [`yeison/notes/README.md`](yeison/notes/README.md))

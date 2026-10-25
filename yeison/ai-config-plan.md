@@ -1,6 +1,6 @@
 # AI configuration plan (agent-skills as the foundation)
 
-A reusable plan for a development-focused, token-efficient AI harness configuration. Written for Claude Code and Cursor; the skills, references and practices stay portable and only thin adapters are harness-specific. Machine-specific status and work-specific details are kept out of this public fork (see `yeison/private/`, git-ignored).
+A reusable plan for a development-focused, token-efficient AI harness configuration. Written for Claude Code and Cursor; the skills, references and practices stay portable and only thin adapters are harness-specific. Machine-specific status and work-specific details are kept out of this public fork (see `yeison/private/`, git-ignored). The step-by-step procedure for bootstrapping and maintaining it is in [`SETUP.md`](SETUP.md).
 
 ## Core principle: development-focused, token-efficient configuration
 
